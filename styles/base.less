@@ -1,0 +1,195 @@
+@import "syntax-variables";
+
+atom-text-editor {
+	background-color: @syntax-background-color;
+	color: @syntax-text-color;
+
+	.wrap-guide {
+		background-color: @syntax-wrap-guide-color;
+	}
+
+	.indent-guide {
+		color: @syntax-indent-guide-color;
+	}
+
+	.invisible-character {
+		color: @syntax-invisible-character-color;
+	}
+
+	.gutter {
+		background-color: @syntax-gutter-background-color;
+		color: @syntax-gutter-text-color;
+
+		.line-number {
+			&.cursor-line {
+				background-color: @syntax-gutter-background-color-selected;
+				color: @syntax-gutter-text-color-selected;
+			}
+
+			&.cursor-line-no-selection {
+				color: @syntax-gutter-text-color-selected;
+			}
+		}
+	}
+
+	.gutter .line-number.folded,
+	.gutter .line-number:after,
+	.fold-marker:after {
+		color: @gray;
+	}
+
+	.invisible {
+		color: @syntax-text-color;
+	}
+
+	.cursor {
+		color: @syntax-cursor-color;
+	}
+
+	.selection .region {
+		background-color: @syntax-selection-color;
+	}
+}
+
+
+// Syntax styles
+
+
+.syntax--comment {
+	color: @gray;
+}
+
+.syntax--function {
+	color: @blue;
+	.syntax--delimiter,
+	.syntax--punctuation,
+	&.syntax--punctuation {
+		color: @white;
+	}
+}
+
+.syntax--attribute-name {
+	color: @blueSoft;
+}
+
+.syntax--property-name {
+	color: @green;
+}
+
+.syntax--constant {
+	color: @orange;
+}
+
+.syntax--keyword.syntax--unit {
+	color: @orangeSoft;
+}
+
+.syntax--variable {
+	color: @redSoft;
+	&.syntax--readwrite {
+		color: @white;
+	}
+	&.syntax--property {
+		color: @white;
+	}
+	&.syntax--object {
+		color: @graySoft;
+	}
+	&.syntax--alias {
+		color: @blueSoft;
+	}
+}
+
+.syntax--keyword {
+	color: @red;
+}
+
+.syntax--parameter {
+	color: @orange;
+	&.syntax--punctuation {
+		color: @white;
+	}
+}
+
+.syntax--storage {
+	color: @violetSoft;
+	&.syntax--type {
+		color: @violet;
+	}
+}
+
+.syntax--name {
+	color: @blue;
+}
+
+.syntax--string {
+	color: @green;
+}
+
+.syntax--objectliteral {
+	color: @greenSoft;
+}
+.syntax--key {
+	color: @greenSoft;
+}
+
+.syntax--accessor {
+	color: @gray;
+}
+
+.syntax--inherited-class {
+	color: @violet;
+}
+
+.syntax--tag {
+	color: @violet;
+	.syntax--attribute-name {
+		color: @orange;
+	}
+	.syntax--key-value.syntax--punctuation {
+		color: @violetSoft;
+	}
+
+	// &.syntax--any {
+	// 	color: @red;
+	// 	.syntax--punctuation {
+	// 		color: @red;
+	// 	}
+	// }
+
+	&.syntax-entity,
+	&.syntax--block,
+	&.syntax--inline,
+	&.syntax--css {
+		color: @blue;
+		.syntax--punctuation {
+			color: @blue;
+		}
+		.syntax--key-value.syntax--punctuation {
+			color: @blueSoft;
+		}
+	}
+
+}
+
+.syntax--ng {
+	.syntax--interpolation {
+		color: @red;
+		.syntax--definition {
+			color: @redSoft;
+		}
+		.syntax--js {
+			color: @white;
+		}
+		.syntax--operator {
+			color: @red;
+		}
+	}
+}
+
+
+// Mini editor
+
+atom-text-editor[mini] .scroll-view {
+	padding-left: 1px;
+}

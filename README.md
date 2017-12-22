@@ -6,4 +6,4 @@
 
 ![CSS](https://raw.githubusercontent.com/cmelo/puking-unicorn-syntax/master/preview/css.png)
 
-![JSON](https://raw.githubusercontent.com/cmelo/puking-unicorn-syntax/master/preview/json.json)
+![JSON](https://raw.githubusercontent.com/cmelo/puking-unicorn-syntax/master/preview/json.png)

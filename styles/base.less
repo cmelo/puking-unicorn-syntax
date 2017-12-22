@@ -80,8 +80,21 @@ atom-text-editor {
 	color: @orange;
 }
 
+.syntax--language {
+	color: @violetSoft;
+}
+
 .syntax--keyword.syntax--unit {
 	color: @orangeSoft;
+}
+
+.syntax--json {
+	.syntax--key .syntax--string {
+		color: @greenSoft;
+	}
+	.syntax--escape {
+		color: @blue;
+	}
 }
 
 .syntax--variable {

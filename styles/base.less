@@ -4,6 +4,13 @@ atom-text-editor {
 	background-color: @syntax-background-color;
 	color: @syntax-text-color;
 
+	.line {padding-left: 1px;}
+	.cursor {border-left-width: 2px; margin-left: 1px;}
+
+	.cursor-line {
+		background-color: @syntax-gutter-background-color-selected;
+	}
+
 	.wrap-guide {
 		background-color: @syntax-wrap-guide-color;
 	}
@@ -19,8 +26,10 @@ atom-text-editor {
 	.gutter {
 		background-color: @syntax-gutter-background-color;
 		color: @syntax-gutter-text-color;
+		margin-left: -1px;
 
 		.line-number {
+			opacity: 1;
 			&.cursor-line {
 				background-color: @syntax-gutter-background-color-selected;
 				color: @syntax-gutter-text-color-selected;

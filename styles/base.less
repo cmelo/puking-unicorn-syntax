@@ -223,7 +223,9 @@ atom-text-editor {
 	}
 }
 .syntax--mustache {
-	color: @redSoft;
+	&.syntax--meta {
+		color: @redSoft;
+	}
 	&.syntax--name {
 		color: @red;
 	}

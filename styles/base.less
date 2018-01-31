@@ -29,6 +29,14 @@ atom-text-editor {
 		margin-left: -1px;
 
 		.line-number {
+			&.git-line-added,
+			&.git-line-modified {
+				border-width: 3px;
+			}
+			&.git-line-removed:before {
+				border-width: 8px; margin-top: -8px; bottom: -8px;
+			}
+
 			opacity: 1;
 			&.cursor-line {
 				background-color: @syntax-gutter-background-color-selected;
